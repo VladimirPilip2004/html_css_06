@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+images {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ------------------- */
+
+.top__container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+
+.head__navbar {
+    background-color: #222222;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head__navbar button {
+    background-color: #222222;
+    border: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 111px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    margin-left: 231px;
+}
+
+.head__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 159px;
+    margin-right: 240px;
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+
+.head__title {
+    background-color: #f1e4e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 764px;
+}
+
+.image {
+    min-width: 801px;
+}
+
+.right__side__head {
+    display: flex;
+    flex-direction: row;
+    margin-left: 63px;
+    margin-top: 290px;
+    margin-bottom: 381px;
+    margin-right: 331px;
+    width: 405px;
+    height: 93px;
+}
+
+.rectangle {
+    background-color: #f16d7f;
+    width: 12px;
+    height: 92px;
+    margin-right: 16px;
+}
+
+.text {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1;
+    color: #222222;
+}
+
+span.h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+span.h2pink {
+    color: #f16d7f;
+}
+
+.top__cards {
+    display: grid;
+    height: 470px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.top__card {
+    position: relative;
+    text-align: center;
+}
+
+.top__card__big {
+    grid-area: 2 / 1 / 3 / 4;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centered h3 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.centered h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #f16d7f;
+}
+
+.products {
+    margin-top: 96px;
+}
+.main__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title h3 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.main__title p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
+    margin-top: 6px;
+}
+
+.all__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.product__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.prod__image_cont{
+    position: relative;
+}
+.prod__image_cont:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;left:0;right:0;
+    background-color:rgba(0,0,0,0);
+  }
+  .prod__image_cont:hover::before {
+    background: rgba(58, 56, 56, 0.86);
+  }
+  .prod__image_cont img {
+    display:block;
+  }
+  .prod__image_cont .btn {
+    width: 138px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity:0;
+    background: none;
+    border: 1px solid #FFFFFF;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  } 
+  .prod__image_cont:hover button {   
+    opacity: 1;
+  }
+
+  .card__text {
+    background-color: #f8f8f8;
+    padding-left: 16px;
+    padding-right: 29px;
+}
+
+.card__text h3 {
+    padding-top: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.card__text p {
+    margin-top: 12.6px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5d5d5d;
+}
+
+.card__text h4 {
+    margin-top: 18px;
+    padding-bottom: 20px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f16d7f;
+}
+
+.all__prod__button {
+    margin-top: 48.5px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all__prod__button button {
+    width: 211px;
+    height: 47px;
+    border: 1px solid #ff6a6a;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f26376;
+    background: none;
+}
+
+.main__bottom {
+    margin: 0 auto;
+    align-items: center;
+}
